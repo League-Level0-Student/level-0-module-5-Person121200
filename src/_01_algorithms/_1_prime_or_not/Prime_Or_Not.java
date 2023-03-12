@@ -7,13 +7,15 @@ public static void main(String[] args) {
 	String response = JOptionPane.showInputDialog("What is your number: ");
 	int responseAsint = Integer.parseInt(response);
 	
-for (int i = 0; i >2; i ++) {
-		if (responseAsint % 1 == 0 && responseAsint % responseAsint==0 && responseAsint % i != 0) {
-			JOptionPane.showMessageDialog(null, "Your number is prime");
-
+for (int i = 2; i <responseAsint; i ++) {
+		if (responseAsint % i == 0) {
+			JOptionPane.showMessageDialog(null, "Your number is composite");
+			System.exit(0);
 
 			}
+	
 		}
+JOptionPane.showMessageDialog(null, "your number is prime");
 	}
 	}
 
