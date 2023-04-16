@@ -42,7 +42,7 @@ public class AmazingRings extends PApplet {
 
     PImage waldo;
     int xpos = 250;
-	  int speed = 1;
+	  int speed = 100;
     @Override
     public void settings() {
     	size(WIDTH,  HEIGHT);
@@ -79,6 +79,7 @@ public class AmazingRings extends PApplet {
     	  else if (xpos < 125) {
     		  speed = -speed;
     	  }
+    	  
     }
     
     
