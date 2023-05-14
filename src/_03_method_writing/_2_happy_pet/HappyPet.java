@@ -63,6 +63,7 @@ public class HappyPet{
 		if(task == 0) {
 			happinessLevel -=100;
 			JOptionPane.showMessageDialog(null, "You were killed by your pet dragon");
+			
 		}
 		if(task == 1) {
 			happinessLevel +=1000;
@@ -76,8 +77,10 @@ public class HappyPet{
 			happinessLevel -=100;
 			JOptionPane.showMessageDialog(null, "You werre killed by your pet dragon");
 		}
-	}
+		
 
+	}
+	
 
 	// 1. Add the following variable to the next line: static int happinessLevel = 0;
 	// this will be used to store the happiness of your pet
@@ -106,19 +109,27 @@ public class HappyPet{
 			if (pet.equalsIgnoreCase("Dragon")) {
 				dragon(task);
 			}
+
 			// 6. Use user input to call the appropriate method created in step 5 below
 			
 			// 7. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
 			else if (happinessLevel >= 100) {
 				JOptionPane.showMessageDialog(null, "Your pet loves you!!!");
+				break;
 			}
-			else if (happinessLevel <= -100)
+			else if (happinessLevel <= -100) {
 				JOptionPane.showMessageDialog(null, "Your pet has died from neglection!!!");
+			break;
+			}
+			JOptionPane.showMessageDialog(null, "Happiness Level =  "+happinessLevel);
 	// 5. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
-			JOptionPane.showMessageDialog(null, "Happiness Level =  "+happinessLevel);
-			}
+					
 	}
+		
+		
 }
+}
+	
