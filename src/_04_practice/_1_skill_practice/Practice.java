@@ -8,7 +8,7 @@ public class Practice {
 	
 public static void main(String[] args) {
 	
-skill30();
+skill50();
 	
 	}
 static public void skill1() {
@@ -40,7 +40,33 @@ static public void skill20() {
 
 static public void skill30() {
 	Random ran = new Random();
-	int min = 0;
-	int max = 20;
+	int rand = ran.nextInt(20);
+	System.out.println(rand);
+	int rand2 = ran.nextInt(10);
+	System.out.println(rand2);
+	JOptionPane.showMessageDialog(null, rand-rand2);
+}
+
+static public void skill40() {
+	String city = JOptionPane.showInputDialog("What city do you live in?");
+	if (city.equalsIgnoreCase("San Diego")) {
+		JOptionPane.showMessageDialog(null, "You live in America's finest city");
+	}
+	else {
+		JOptionPane.showMessageDialog(null, "Move to San Diego");
+	}
+	String cars = JOptionPane.showInputDialog("How many cars does your family have?");
+	int carsAsint = Integer.parseInt(cars);
+	 if (carsAsint <= 1) {
+			JOptionPane.showMessageDialog(null, "I have a Tesla and a Honda, LOL");
+	}
+	if (carsAsint > 1) {
+		JOptionPane.showMessageDialog(null, "Your cars have " + carsAsint*4+ " Wheels in total");
+	}
+}
+
+static public void skill50() {
+	String school = JOptionPane.showInputDialog("Where do you go for school?");
+	JOptionPane.showMessageDialog(null, school+" is a great school!!!");
 }
 }
